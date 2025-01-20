@@ -1,0 +1,98 @@
+body {
+  background-color: lightgray;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+
+.workout-details {
+  background-color: white;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: green
+}
+
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: gray;
+}
+
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: pink;
+  padding: 6px;
+  border-radius: 50%;
+  color: red;
+}
+
+label, input {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: green;
+  border: 0;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error {
+  padding: 10px;
+  background-color: pink;
+  border: 1px solid red;
+  color: red;
+  border-radius: 4px;
+  margin: 20px 0;
+}
