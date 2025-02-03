@@ -24,16 +24,16 @@ userSchema.statics.register = async function (email, password) {
     }
 
     if (!validator.isEmail(email)) {
-        throw Error('Invalid email is used')
+        throw Error('Invalid email is used.')
     }
 
     if (!validator.isStrongPassword(password)) {
-        throw Error ('Weak password is used')
+        throw Error ('Weak password is used.')
     }
 
     const exist = await this.findOne({email})
     if (exist) {
-        throw Error('Email already in use')
+        throw Error('Email already in use.')
     }
 
     const salt = await bcrypt.genSalt(10)
@@ -51,12 +51,12 @@ userSchema.statics.login = async function (email, password) {
     }
     const user = await this.findOne({email})
     if (!user) {
-        throw Error('Incorrect email')
+        throw Error('Incorrect email.')
     }
     
     const match = await bcrypt.compare(password, user.password)
     if (!match) {
-        throw Error('Incorrect password')
+        throw Error('Incorrect password.')
     }
 
     return user

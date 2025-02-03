@@ -96,3 +96,31 @@ button {
   border-radius: 4px;
   margin: 20px 0;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 10px;
+}
+
+nav button {
+  background-color: green;
+  color: white;
+  border: 2px solid green;
+  margin: 20px;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.register, .login {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+}
